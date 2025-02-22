@@ -1,0 +1,283 @@
+﻿<Page x:Class="Jao_Project.BossBattleP"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Jao_Project"
+      xmlns:gif="http://wpfanimatedgif.codeplex.com"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="BossBattleP">
+    <Page.Resources>
+        <Style TargetType="ScrollBar">
+            <Setter Property="Opacity" Value="0.3" >
+            </Setter>
+        </Style>
+    </Page.Resources>
+
+    <Page.Background>
+        <VisualBrush Stretch="UniformToFill">
+            <VisualBrush.Visual>
+                <Image gif:ImageBehavior.AnimatedSource="/pics/61b1710cd1f39d8a2134c7a817b84797.gif"
+                   gif:ImageBehavior.AutoStart="True"
+                   gif:ImageBehavior.RepeatBehavior="1"/>
+            </VisualBrush.Visual>
+        </VisualBrush>
+    </Page.Background>
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0"  Margin="0,0,0,10" Grid.ColumnSpan="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock 
+                Grid.Row="0" Grid.Column="0"
+                FontSize="15" FontWeight="Bold"
+                Grid.ColumnSpan="1" HorizontalAlignment="Left"
+                Text="Battle" FontFamily="GothicI" Foreground="White"/>
+            <Border BorderThickness="3" BorderBrush="#FF020328"  Background="#FF00051D"
+                    Grid.Column="1" Margin="5">
+                <TextBlock x:Name="EnemyInfo" Grid.Row="0" Margin="2" Foreground="White"
+                           TextWrapping="Wrap" Height="30" FontFamily="Consolas" FontSize="13"/>
+
+            </Border>
+
+        </Grid>
+
+
+        <Grid Grid.Row="1"   >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*"/>
+
+            </Grid.RowDefinitions>
+
+
+            <Border Grid.Row="1" BorderBrush="Navy" BorderThickness="3" Background="#FF00051D">
+                <TextBlock x:Name="CharacterInfo" Grid.Row="0" Margin="10" Foreground="#FFF7F7F7" FontFamily="Consolas"/>
+            </Border>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="2" Margin="0,0,0,0" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*"/>
+
+            </Grid.RowDefinitions>
+
+            <Border Grid.Row="1" BorderBrush="Navy" BorderThickness="3" Opacity="10" Background="#FF00051D" >
+                <TextBox x:Name="Info" Grid.Row="0" Margin="10" Foreground="White" TextWrapping="WrapWithOverflow" FontFamily="Consolas"
+                         Background="#FF00051D" BorderThickness="0" IsReadOnly="True" VerticalScrollBarVisibility="Auto" />
+
+            </Border>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="1" Margin="0,0,0,0" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+        </Grid>
+
+        <Grid Grid.Row="1" Margin="0,0,0,10" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+
+        </Grid>
+        <Border BorderThickness="5" BorderBrush="#FF020328" Grid.Row="2" 
+                Grid.ColumnSpan="3" Grid.Column="0">
+        </Border>
+
+        <Grid Grid.Row="2"  Margin="0,10,0,15" Grid.ColumnSpan="3" Grid.Column="0"  >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.33*"/>
+                <ColumnDefinition Width="0.21*"/>
+                <ColumnDefinition Width="0.18*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center"
+                        Orientation="Horizontal" Margin="0,15,0,0">
+                <Button x:Name="NormalAttackButton" Width="150" Margin="5,0,5,0" 
+                        Content="Normal Attack" Click="NormalAttackButton_OnClick"/>
+                <Button x:Name="Skill1" Width="150" Margin="5,0,5,0" Click="Skill1_OnClick">
+                    <Grid Height="50"  Width="150" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock
+                            FontSize="13" FontWeight="Bold" Grid.ColumnSpan="2"
+                            Text="Sword Gatling" Margin="3,3,0,2"/>
+
+                        <TextBlock FontSize="10" Margin="5,3,0,0"
+                                   Grid.Row="1" FontStyle="Italic"
+                                   Text="Mana Cost: 50"  />
+                        <StackPanel
+                            Grid.Row="1" Grid.Column="1"
+                            HorizontalAlignment="Right" Orientation="Horizontal">
+                            <TextBlock FontSize="10"
+                                       Margin="0,3,10,0" FontStyle="Italic"
+                                       Text="Atk + 20" />
+                        </StackPanel>
+                    </Grid>
+                </Button>
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Center"
+                        Grid.Row="1" Grid.Column="0" 
+                        Orientation="Horizontal" Margin="0,15,0,0">
+                <Button x:Name="Skill2"  Width="150" Margin="5,0,5,0" 
+                         Click="Skill2_OnClick">
+                    <Grid Height="50"  Width="150" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock
+                            FontSize="13" FontWeight="Bold" Grid.ColumnSpan="2"
+                            Text="Healing Touch" Margin="3,3,0,2"/>
+
+                        <TextBlock FontSize="10" Margin="5,3,0,0"
+                                   Grid.Row="1" FontStyle="Italic"
+                                   Text="Mana Cost: 100"  />
+                        <StackPanel
+                            Grid.Row="1" Grid.Column="1"
+                            HorizontalAlignment="Right" Orientation="Horizontal">
+                            <TextBlock FontSize="10"
+                                       Margin="0,3,5,0" FontStyle="Italic"
+                                       Text="Heals 20%" />
+                        </StackPanel>
+                    </Grid>
+                </Button>
+                <Button x:Name="Skill3"  Width="150" Margin="5,0,5,0" Click="Skill3_OnClick">
+                    <Grid Height="50"  Width="150" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock
+                            FontSize="13" FontWeight="Bold" Grid.ColumnSpan="2"
+                            Text="Escalliber" Margin="3,3,0,2"/>
+
+                        <TextBlock FontSize="10" Margin="5,3,0,0"
+                                   Grid.Row="1" FontStyle="Italic"
+                                   Text="Mana Cost: 200"  />
+                        <StackPanel
+                            Grid.Row="1" Grid.Column="1"
+                            HorizontalAlignment="Right" Orientation="Horizontal">
+                            <TextBlock FontSize="10"
+                                       Margin="0,3,10,0" FontStyle="Italic"
+                                       Text="Atk + 100" />
+                        </StackPanel>
+                    </Grid>
+                </Button>
+            </StackPanel>
+
+            <ListBox x:Name="PotionBox" Grid.Column="1" Grid.RowSpan="2" Margin="0,10,5,0" 
+                     Background="Transparent" Foreground="White" SelectionChanged="PotionBox_OnSelectionChanged">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Border
+                            Margin="0,0,0,5" Padding="8" Width="200"
+                            BorderBrush="DarkSalmon" BorderThickness="1">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock
+                                    FontSize="20" FontWeight="Bold"
+                                    Text="{Binding Path=Name}" />
+                                <StackPanel
+                                    Grid.Row="1" Grid.Column="0"
+                                    HorizontalAlignment="Left" Orientation="Horizontal">
+                                    <TextBlock FontSize="12"
+                                               Margin="0,0,5,0" FontStyle="Italic"
+                                               Text="Health add:" />
+                                    <TextBlock FontSize="12" Text="{Binding Path=Healthadd}" FontWeight="Bold" />
+                                </StackPanel>
+                                <StackPanel
+                                    Grid.Row="2" Grid.Column="0"
+                                    HorizontalAlignment="Left" Orientation="Horizontal">
+                                    <TextBlock FontSize="12"
+                                               Margin="0,0,5,0" FontStyle="Italic"
+                                               Text="Mana add:" />
+                                    <TextBlock FontSize="12" Text="{Binding Path=Manaadd}" FontWeight="Bold" />
+                                </StackPanel>
+
+                                <TextBlock Grid.Column="1" FontSize="12" Margin="0,0,20,0"
+                                           Grid.Row="1" FontStyle="Italic"
+                                           Text="{Binding Path=WhatInfo}" />
+                                <StackPanel
+                                    Grid.Row="2" Grid.Column="1"
+                                    HorizontalAlignment="Right" Orientation="Horizontal">
+                                    <TextBlock FontSize="12"
+                                        Margin="0,0,5,0" FontStyle="Italic"
+                                        Text="Qty:" />
+                                    <TextBlock FontSize="12" Text="{Binding Path=Quantity}" FontWeight="Bold" />
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+
+
+        </Grid>
+        <StackPanel Grid.Row="2"  Grid.Column="2" Orientation="Vertical" VerticalAlignment="Center"
+                    HorizontalAlignment="Right" >
+            <Button x:Name="UseButton" Width="150"  Margin="10,0,15,5"  MinHeight="40"
+                    Content="Use" Click="UseButton_Click" />
+
+            <Button x:Name="BackB" Width="150" Margin="10,0,15,5"  MinHeight="40"
+                    Content="Run" Click="BackB_Click"/>
+        </StackPanel>
+
+
+    </Grid>
+</Page>

@@ -1,0 +1,74 @@
+﻿<Page x:Class="Jao_Project.HospitalP"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Jao_Project"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="HospitalP" >
+    <Page.Background>
+        <ImageBrush ImageSource="/Pics/Cathedral.jpg"/>
+    </Page.Background>
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0"  Margin="0,0,0,10" Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+
+            </Grid.ColumnDefinitions>
+
+            <TextBlock 
+                Grid.Row="0" Grid.Column="0"
+                FontSize="20" FontWeight="Bold"
+                HorizontalAlignment="Left" Margin="30,0,0,0"
+                Text="Cathedral" FontFamily="GothicI" Foreground="White"/>
+
+
+        </Grid>
+
+
+        <Grid Grid.Row="1" Margin="0,0,0,10" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+
+            </Grid.ColumnDefinitions>
+
+            <Border x:Name="ListBox" Grid.Row="0" Grid.RowSpan="2" Grid.ColumnSpan="2"
+                Margin="50,0,50,10" BorderBrush="#FFABABAB" BorderThickness="3" >
+            </Border>
+            <TextBlock x:Name="Details" Grid.ColumnSpan="2" Background="Black" Margin="60,10,60,10" Opacity="50" Padding="15,15" FontSize="20" FontFamily="Consolas" Foreground="White" />
+            <TextBlock x:Name="CharaInfo" Grid.Row="1" Background="Black" Margin="60,70,60,20" Opacity="50" Foreground="White" Text="Health" Padding="15,5" FontSize="18" FontFamily="Consolas" />
+        </Grid>
+
+        <StackPanel Grid.Row="2" Grid.Column="1" Margin="0,10,0,0" Orientation="Horizontal" 
+                    HorizontalAlignment="Center">
+            <Button x:Name="HealButton" Padding="8,8" VerticalAlignment="Center"  Margin="0,0,50,10" HorizontalAlignment="Center"
+                Content="Heal"  FontFamily="GothicI" FontSize="30" Click="HealButton_Click"  >
+            </Button>
+            <Button x:Name="Back" Padding="8,8" VerticalAlignment="Center"  Margin="0,0,0,10" HorizontalAlignment="Center"
+                Content="Back"  FontFamily="GothicI" FontSize="30" Click="Back_Click"  >
+            </Button>
+        </StackPanel>
+
+
+    </Grid>
+</Page>
