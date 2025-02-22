@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\asus\Desktop\programin stuff\C#\Jao_Project\Jao_Project\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Pages\AdventureP.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\BattleP.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\BossBattleP.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\CharacterInfoP.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\CraftP.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\DemonLordP.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\GameOver.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\GatchaP.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\HospitalP.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\InventoryP.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MainMenu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Start.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\StoreP.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Pages\AdventureP.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\BattleP.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\BossBattleP.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\CharacterInfoP.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\CraftP.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\DemonLordP.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\GameOver.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\GatchaP.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\HospitalP.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\InventoryP.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainMenu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Start.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\StoreP.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

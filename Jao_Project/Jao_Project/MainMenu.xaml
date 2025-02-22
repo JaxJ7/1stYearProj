@@ -1,0 +1,108 @@
+﻿<Page x:Class="Jao_Project.MainMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Jao_Project"
+      xmlns:gif="http://wpfanimatedgif.codeplex.com"
+      mc:Ignorable="d"  Loaded="MainMenu_OnLoaded"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainMenu" >
+    <Page.Background>
+        <VisualBrush>
+            <VisualBrush.Visual>
+                <Image gif:ImageBehavior.AnimatedSource="/pics/3609a58f09f1c9c87fea4cf875b564b7.gif"
+                   gif:ImageBehavior.AutoStart="True"
+                   gif:ImageBehavior.RepeatBehavior="1"/>
+            </VisualBrush.Visual>
+        </VisualBrush>
+    </Page.Background>
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"  />
+            <ColumnDefinition  Width="Auto" MinWidth="350"/>
+        </Grid.ColumnDefinitions>
+
+
+        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Vertical">
+            <Button x:Name="Adventure" Margin="0,0,30,5"
+                Padding="4,4" VerticalAlignment="Stretch" 
+                Content="Play"  FontFamily="GothicI" FontSize="30" Click="Adventure_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/pics/grunge-paper-texture-vectors.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Button_Charainfo" Padding="4,4" VerticalAlignment="Center"  Margin="0,0,30,5" Click="Button_Charainfo_Click"
+                    Content="Character Info"  FontFamily="GothicI" FontSize="30"  Grid.ColumnSpan="2">
+                <Button.Background>
+                    <ImageBrush ImageSource="/pics/grunge-paper-texture-vectors.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Store" Padding="4,4" VerticalAlignment="Center"  Margin="0,0,30,5"
+                    Content="Store"  FontFamily="GothicI" FontSize="30" Grid.ColumnSpan="2" Click="Store_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/pics/grunge-paper-texture-vectors.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Gatcha" Padding="4,4" VerticalAlignment="Center"  Margin="0,0,30,5"
+                    Content="Gatcha"  FontFamily="GothicI" FontSize="30"  Grid.ColumnSpan="2" Click="Gatcha_OnClick">
+                <Button.Background>
+                    <ImageBrush ImageSource="/pics/grunge-paper-texture-vectors.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Craft" Padding="4,4" VerticalAlignment="Center"  Margin="0,0,30,5"
+                    Content="Craft"  FontFamily="GothicI" FontSize="30"  Grid.ColumnSpan="2" Click="Craft_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/pics/grunge-paper-texture-vectors.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Hospital" Padding="4,4" VerticalAlignment="Center"  Margin="0,0,30,5"
+                    Content="Cathedral"  FontFamily="GothicI" FontSize="30"  Grid.ColumnSpan="2" Click="Hospital_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/pics/grunge-paper-texture-vectors.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Quit" Padding="4,4" VerticalAlignment="Center"  Margin="0,0,30,5"
+                    Content="Quit"  FontFamily="GothicI" FontSize="30"  Grid.ColumnSpan="2" Click="Quit_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/pics/grunge-paper-texture-vectors.jpg"/>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+
+
+        <!--<StackPanel
+            Grid.Row="4" Grid.Column="0"
+            HorizontalAlignment="Left" VerticalAlignment="Center"
+            Orientation="Horizontal" Height="88" Width="284">
+            <Button x:Name="OKButton" 
+                Width="88" Margin="5,0,5,0"
+                Padding="8,5" VerticalAlignment="Center"
+                Content="OK" Height="88"  FontFamily="GothicG" FontWeight="Bold" FontSize="15">
+                <Button.Background>
+                    <ImageBrush ImageSource="/pics/grunge-paper-texture-vectors.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="CancelButton" 
+                Width="88" Margin="5,0,5,0"
+                Padding="8,5" VerticalAlignment="Center"
+                Content="Cancel" Height="88" FontFamily="GothicG" FontWeight="Bold" FontSize="15">
+                <Button.Background>
+                    <ImageBrush ImageSource="/pics/grunge-paper-texture-vectors.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button
+                Width="88"
+                Padding="8,5"
+                Content="Clear" Height="88" FontFamily="GothicG" FontWeight="Bold" FontSize="15">
+                <Button.Background>
+                    <ImageBrush ImageSource="/pics/grunge-paper-texture-vectors.jpg"/>
+                </Button.Background>
+            </Button>
+        </StackPanel>-->
+
+    </Grid>
+</Page>

@@ -1,0 +1,79 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="22ba4d403b0c9c172526be971b0c0ab7.gif" />
+    <None Remove="329046723_515123987374272_6254478366488798556_n.jpg" />
+    <None Remove="3609a58f09f1c9c87fea4cf875b564b7.gif" />
+    <None Remove="61b1710cd1f39d8a2134c7a817b84797.gif" />
+    <None Remove="63vqxf.jpg" />
+    <None Remove="ab7f4c717041bb217770637bb3326d01_8853707346150041130.jpg" />
+    <None Remove="Cathedral.jpg" />
+    <None Remove="ceb574258cb71c79ba07a841b38d50a8.gif" />
+    <None Remove="d8ece1a9b1942de081df093c42c982d32d38d26e_2000x2000.webp" />
+    <None Remove="desktop-wallpaper-snow-village-settlement-the-vikings-at-home-art-michael-davini-and-mobile-backgrounds-winter-village-fantasy.jpg" />
+    <None Remove="e63579352cb008cd7cf4deec97224c50.gif" />
+    <None Remove="ebb21f5f0d99b88.gif" />
+    <None Remove="f003c6c3ff9ba566d1e02c0cb181961c.jpg" />
+    <None Remove="grunge-paper-texture-vectors.jpg" />
+    <None Remove="m1pxluwqbgj41.png" />
+    <None Remove="medieval.gif" />
+    <None Remove="Screenshot 2022-03-11 160512.png" />
+    <None Remove="this.jpg" />
+    <None Remove="tumblr_oh2jm3gWAl1qciqqno2_1280.gif" />
+    <None Remove="unnamed %281%29.jpg" />
+    <None Remove="Virtual Background.png" />
+    <None Remove="Working-With-Hexels-for-Drawing-Tiled-Pixel-Art.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WPF-UI" Version="2.0.3" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Pics\Cathedral.jpg" />
+    <Resource Include="d8ece1a9b1942de081df093c42c982d32d38d26e_2000x2000.webp" />
+    <Resource Include="Pics\f003c6c3ff9ba566d1e02c0cb181961c.jpg" />
+    <Resource Include="Pics\63vqxf.jpg" />
+    <Resource Include="e63579352cb008cd7cf4deec97224c50.gif" />
+    <Resource Include="Pics\22ba4d403b0c9c172526be971b0c0ab7.gif" />
+    <Resource Include="Pics\3609a58f09f1c9c87fea4cf875b564b7.gif" />
+    <Resource Include="Pics\61b1710cd1f39d8a2134c7a817b84797.gif" />
+    <Resource Include="Pics\ceb574258cb71c79ba07a841b38d50a8.gif" />
+    <Resource Include="Pics\ebb21f5f0d99b88.gif" />
+    <Resource Include="Pics\m1pxluwqbgj41.png" />
+    <Resource Include="Pics\medieval.gif" />
+    <Resource Include="Pics\329046723_515123987374272_6254478366488798556_n.jpg" />
+    <Resource Include="Pics\ab7f4c717041bb217770637bb3326d01_8853707346150041130.jpg" />
+    <Resource Include="Pics\desktop-wallpaper-snow-village-settlement-the-vikings-at-home-art-michael-davini-and-mobile-backgrounds-winter-village-fantasy.jpg" />
+    <Resource Include="Pics\grunge-paper-texture-vectors.jpg" />
+    <Resource Include="Pics\Virtual Background.png" />
+    <Resource Include="Pics\Screenshot 2022-03-11 160512.png" />
+    <Resource Include="Pics\tumblr_oh2jm3gWAl1qciqqno2_1280.gif" />
+    <Resource Include="Pics\Working-With-Hexels-for-Drawing-Tiled-Pixel-Art.jpg" />
+    <Resource Include="Pics\this.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Music\DarkForest.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Music\DestroytheMechas.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Music\Ruins.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Music\TheFinalBattle.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
